@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 type SignupProps = {};
 
@@ -31,12 +32,12 @@ const Signup: React.FC<SignupProps> = () => {
       if (!newUser) return;
       router.push('/');
     } catch (error: any) {
-      alert(error.message);
+      toast.error(error.message, {position: "top-center", autoClose: 3000, theme: "dark"})
     }
   };
 
   useEffect(() => {
-   if(error) alert(error.message)
+   if(error) toast.error(error.message, {position: "top-center", autoClose: 3000, theme: "dark"})
   }, [error])
   
   
