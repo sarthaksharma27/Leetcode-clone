@@ -12,7 +12,7 @@ type PlaygroundProps = {
 
 const Playground: React.FC<PlaygroundProps> = () => {
     const boilerPlate = `function twoSum (nums, target) {
-        // Write your code here
+    // Write your code here
 };`;
     
     return (
