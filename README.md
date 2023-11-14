@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LeetCode Clone
+![Screenshot from 2023-11-14 19-46-02](https://github.com/sarthaksharma27/Leetcode-clone/assets/130299888/e378874e-2d96-4aa2-b2ba-a540dc250a68)
 
-## Getting Started
 
-First, run the development server:
+A LeetCode clone implemented using Next.js, React, TypeScript, Tailwind CSS, and Firebase.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Include a link or GIF showcasing your application.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Interactive Code Playground:** Users can write and test their code in an interactive code editor.
+- **Problem Statements:** Display LeetCode-style problem statements.
+- **User Authentication:** Users can log in to save their progress and track solved problems.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications.
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+- [Firebase](https://firebase.google.com/) - Backend-as-a-Service platform.
 
-## Learn More
+### Additional NPM Packages
 
-To learn more about Next.js, take a look at the following resources:
+- [@codemirror/lang-javascript](https://www.npmjs.com/package/@codemirror/lang-javascript) - CodeMirror language support for JavaScript.
+- [@uiw/codemirror-theme-vscode](https://www.npmjs.com/package/@uiw/codemirror-theme-vscode) - Visual Studio Code theme for CodeMirror.
+- [@uiw/react-codemirror](https://www.npmjs.com/package/@uiw/react-codemirror) - CodeMirror component for React.
+- [assert](https://www.npmjs.com/package/assert) - Node.js built-in assert module for assertions.
+- [firebase](https://www.npmjs.com/package/firebase) - Firebase SDK for JavaScript apps.
+- [react-firebase-hooks](https://www.npmjs.com/package/react-firebase-hooks) - Firebase hooks for React.
+- [react-icons](https://react-icons.github.io/react-icons/) - Popular icon library for React.
+- [react-split](https://www.npmjs.com/package/react-split) - Resizable split views for React.
+- [react-toastify](https://www.npmjs.com/package/react-toastify) - Toast notifications for React.
+- [react-youtube](https://www.npmjs.com/package/react-youtube) - YouTube component for React.
+- [recoil](https://www.npmjs.com/package/recoil) - State management library for React.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/your-username/leetcode-clone.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd leetcode-clone
+   npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm run dev
+   
+Visit http://localhost:3000 in your browser.
+
+Firebase Configuration
+To use Firebase authentication and other features, you need to set up a Firebase project and add your configuration details.
+
+Create a Firebase project on the Firebase Console.
+
+Copy your Firebase config details from the project settings.
+
+Create a .env.local file in the root of your project and add your Firebase config:
+
+env
+Copy code
+   ```bash
+   NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+   Replace the values with your actual Firebase project details.
+
+Contributing
+Feel free to contribute to this project. Fork the repository, make your changes, and submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+arduino
+Copy code
+
+You can copy and paste this entire template into your GitHub README file.
+
+
+
+
+
