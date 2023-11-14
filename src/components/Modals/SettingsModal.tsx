@@ -1,7 +1,7 @@
 import { BsCheckLg, BsChevronDown } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
-import { ISettings } from "../Workspace/Playground/Playground";
 import useLocalStorage from "@/hooks/useLocalStorage";
+import { ISettings } from "../Workspace/Playground/Playground";
 
 const EDITOR_FONT_SIZES = ["12px", "13px", "14px", "15px", "16px", "17px", "18px"];
 
