@@ -59,7 +59,7 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
               <button className="bg-dark-fill-3 py-1 px-2 cursor-pointer rounded">Sign In</button>
             </Link>
           )}
-          {problemPage && <Timer />}
+          {user && problemPage && <Timer />}
           {user && (
             <div className="cursor-pointer group relative">
               <img src="/avatar.png" alt="User Profile" className="h-8 w-8 rounded-full" />
