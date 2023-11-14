@@ -1,13 +1,47 @@
+import { getFirestore, doc, setDoc } from 'firebase/firestore';
+import { useState } from 'react';
 import ProblemsTable from '@/components/ProblemsTable/ProblemsTable';
 import Topbar from '@/components/Topbar/Topbar';
 
 export default function Home() {
+  const [inputs, setInputs] = useState({
+    id: '',
+    title: '',
+    difficulty: '',
+    category: '',
+    videoId: '',
+    link: '',
+    order: 0,
+    likes: 0,
+    dislikes: 0,
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputs({
+      ...inputs,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const newProblem = {
+      ...inputs,
+      order: Number(inputs.order),
+    };
+
+    // Replace 'yourFirestoreInstance' with your actual Firestore instance
+    const db = getFirestore();
+    
+    await setDoc(doc(db, "problems", inputs.id), newProblem);
+    alert("Saved to Database");
+  };
+
   return (
     <>
       <main className='bg-dark-layer-2 min-h-screen'>
         <Topbar />
-        <h1
-          className='text-2xl text-center text-gray-700 dark:text-gray-400 font-medium uppercase mt-10 mb-5'>
+        <h1 className='text-2xl text-center text-gray-700 dark:text-gray-400 font-medium uppercase mt-10 mb-5'>
           &ldquo; QUALITY OVER QUANTITY &rdquo; 👇
         </h1>
 
@@ -34,9 +68,19 @@ export default function Home() {
               </tr>
             </thead>
             <ProblemsTable />
-           </table>
+          </table>
         </div>
 
+        <form className='p-6 flex flex-col max-w-sm gap-3' onSubmit={handleSubmit}>
+          <input onChange={handleInputChange} type="text " placeholder='problem id' name='id' />
+          <input onChange={handleInputChange} type="text " placeholder='title' name='title' />
+          <input onChange={handleInputChange} type="text " placeholder='difficulty' name='difficulty' />
+          <input onChange={handleInputChange} type="text " placeholder='category ' name='category' />
+          <input onChange={handleInputChange} type="text " placeholder='order ' name='order' />
+          <input onChange={handleInputChange} type="text " placeholder='videoId? ' name='videoId' />
+          <input onChange={handleInputChange} type="text " placeholder='link?' name='link' />
+          <button className='bg-white'>Save to db</button>
+        </form>
       </main>
     </>
   );
