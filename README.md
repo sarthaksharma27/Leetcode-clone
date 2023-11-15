@@ -20,12 +20,12 @@ The LeetCode clone is a web application built with Next.js, React, TypeScript, T
 ## Tech Stack
 
 ## Client
+- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications.
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
 
 ## Server
-- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications.
 - [Firebase](https://firebase.google.com/) - Backend-as-a-Service platform.
 
 ### Additional NPM Packages
@@ -58,8 +58,8 @@ To run this project, you will need to add the following environment variables to
    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
    NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
-   Replace the values with your actual Firebase project details.
 ```
+Replace the values with your actual Firebase project details.
 
 
 ## Installation
