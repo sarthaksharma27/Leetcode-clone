@@ -1,25 +1,31 @@
-# LeetCode Clone
+
+# Leetcode clone
+
 ![Screenshot from 2023-11-14 19-46-02](https://github.com/sarthaksharma27/Leetcode-clone/assets/130299888/e378874e-2d96-4aa2-b2ba-a540dc250a68)
 
-
-A LeetCode clone implemented using Next.js, React, TypeScript, Tailwind CSS, and Firebase.
-
-## Demo
-
-Include a link or GIF showcasing your application.
+The LeetCode clone is a web application built with Next.js, React, TypeScript, Tailwind CSS, and Firebase. It offers an interactive code playground for users to write and test code, presents LeetCode-style problem statements, and supports user authentication for progress tracking. The tech stack includes popular libraries and tools such as CodeMirror, Firebase SDK, and React icons. 
 
 ## Features
 
-- **Interactive Code Playground:** Users can write and test their code in an interactive code editor.
-- **Problem Statements:** Display LeetCode-style problem statements.
-- **User Authentication:** Users can log in to save their progress and track solved problems.
+- **Interactive Code Playground:**
+  Users can write, edit, and test their code in a dynamic and interactive code editor.
+
+- **LeetCode-Style Problem Statements:**
+  Clear presentation of problem statements, following the style of LeetCode challenges.
+
+- **User Authentication:**
+  Secure user authentication system enabling users to log in, save progress, and track solved problems.
+
 
 ## Tech Stack
 
-- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications.
+## Client
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 - [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript.
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
+
+## Server
+- [Next.js](https://nextjs.org/) - React framework for server-rendered React applications.
 - [Firebase](https://firebase.google.com/) - Backend-as-a-Service platform.
 
 ### Additional NPM Packages
@@ -36,34 +42,16 @@ Include a link or GIF showcasing your application.
 - [react-youtube](https://www.npmjs.com/package/react-youtube) - YouTube component for React.
 - [recoil](https://www.npmjs.com/package/recoil) - State management library for React.
 
-## Installation
 
-1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/leetcode-clone.git
 
-   ```bash
-   cd leetcode-clone
-   npm install
 
-   ```bash
-   npm run dev
-   
-Visit http://localhost:3000 in your browser.
 
-Firebase Configuration
-To use Firebase authentication and other features, you need to set up a Firebase project and add your configuration details.
+## Environment Variables
 
-Create a Firebase project on the Firebase Console.
+To run this project, you will need to add the following environment variables to your .env file
 
-Copy your Firebase config details from the project settings.
-
-Create a .env.local file in the root of your project and add your Firebase config:
-
-env
-Copy code
-   ```bash
+  ```bash
    NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
    NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
@@ -71,19 +59,22 @@ Copy code
    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
    NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
    Replace the values with your actual Firebase project details.
+```
 
-Contributing
-Feel free to contribute to this project. Fork the repository, make your changes, and submit a pull request.
 
-License
-This project is licensed under the MIT License.
-
-arduino
-Copy code
-
-You can copy and paste this entire template into your GitHub README file.
+## Installation
 
 
 
+```bash
+  git clone https://github.com/your-username/leetcode-clone.git
+  cd leetcode-clone
+```
 
+```bash
+   npm install
+   npm run dev
+```
 
+Visit http://localhost:3000 in your browser.
+    
